@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menClothesstyle.css">
+    <script src="menlogic.js" defer></script>
+    <script src="https://kit.fontawesome.com/bcd2f46ff9.js" crossorigin="anonymous"></script>
+    <title>Men Section |Enna WebStore </title>
+</head>
+<body>
+ <header>
+        <h2 class="logo">ENNEA </h2>
+        <div class="navbar-btns-container">
+        <button id="cart-btn" >
+            <i class="fa-solid fa-cart-shopping"></i>        </button>
+        <button id="switch-mode">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+        </button>
+        </div>
+
+
+
+    </header>
+    <ul id="cart">
+        <h1 class="cart-title">cart</h1>
+        <i class="fa-solid fa-xmark" id="cart-xmark"></i>
+        <p id ="total"></p>
+    </ul>
+
+    <main>
+        <div class="filters">
+            <button  data-filter="all"   class="c"">All</button>
+            <button  data-filter="tops"   class="filter-btn">clothes</button>
+            <button  data-filter="shoes"   class="filter-btn">shoes</button>
+            <button  data-filter="watches"  class="filter-btn">watches</button>
+            
+        </div>
+        <div class="prodcts">
+           <!-- Clothing Section -->
+<!-- Tops Section -->
+<div class="product" data-category="tops">
+    <img src="images/men/clothes/4363ccd7c5c4c429831c59109e81a941.jpg" alt="Navy Casual Shirt" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Navy Casual Shirt</h3>
+        <p class="price">32$</p>
+        <button class="adding-btn">+</button>
+    </div>
+</div>
+
+<div class="product" data-category="tops">
+    <img src="images/men/clothes/979df1dc90f7b4df9f2c83b4fe7139c4.jpg" alt="Grey Cotton Sweatshirt" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Grey Cotton Sweatshirt</h3>
+        <p class="price">38$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+
+<div class="product" data-category="tops">
+    <img src="images/men/clothes/a104a57edf5f66e81145cb27019364a8.jpg" alt="Winter Thermal Top" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Winter Thermal Top</h3>
+        <p class="price">45$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+
+<div class="product" data-category="tops">
+    <img src="images/men/clothes/d4167af07aeaa631e49dadfd84022388.jpg" alt="Maroon Zip Hoodie" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Maroon Zip Hoodie</h3>
+        <p class="price">52$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+
+<!-- Shoes Section -->
+<div class="product" data-category="shoes">
+    <img src="images/men/shoes/8fc7a4a5e0ed9225cb47f4d52cdb00ae.jpg" alt="White Canvas Sneakers" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">White Canvas Sneakers</h3>
+        <p class="price">58$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+
+<div class="product" data-category="shoes">
+    <img src="images/men/shoes/b978e68fe2b2241a978f9c6d141a625f.jpg" alt="Black Running Shoes" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Black Running Shoes</h3>
+        <p class="price">64$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+
+<div class="product" data-category="shoes">
+    <img src="images/men/shoes/dd14cae060944cb1ae8fd4f13ec9b928.jpg" alt="Brown Leather Loafers" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Brown Leather Loafers</h3>
+        <p class="price">75$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+
+<div class="product" data-category="shoes">
+    <img src="images/men/shoes/f9b3c4aff283c671006fd3218f5445b0.jpg" alt="High-Top Skate Shoes" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">High-Top Skate Shoes</h3>
+        <p class="price">69$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+
+<!-- Watches Section -->
+<div class="product" data-category="watches">
+    <img src="images/men/watches/0a474d015ab39dc2dbf628b2d1db4bc1.jpg" alt="Silver Chronograph Watch" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Silver Chronograph Watch</h3>
+        <p class="price">120$</p>
+        <button class="adding-btn">+</button>
+    </div>
+</div>
+
+<div class="product" data-category="watches">
+    <img src="images/men/watches/ee1d1946e3f131867bf27f20eccaf184.jpg" alt="Black Sports Watch" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Black Sports Watch</h3>
+        <p class="price">85$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+
+<div class="product" data-category="watches">
+    <img src="images/men/watches/eefd131e4ed66eeabd27cea7ee1f8796.jpg" alt="Gold Classic Watch" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Gold Classic Watch</h3>
+        <p class="price">150$</p>
+        <button class="adding-btn">+</button>
+    </div>
+</div>
+
+<div class="product" data-category="watches">
+    <img src="images/men/watches/f521ce727e111fdc556b1f4b27d75c5e.jpg" alt="Smart Fitness Tracker" width="250px">
+    <div class="product-text">
+        <h3 class="product-name">Smart Fitness Tracker</h3>
+        <p class="price">90$</p>
+        <button class="adding-btn">+</button>
+
+    </div>
+</div>
+        </div>
+    </main>
+</body>
+</html>

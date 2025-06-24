@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+    --background-color:white;
+    --text-color:black;
+}
+.darkmode{
+    --background-color:black;
+    --text-color:white;
+}
+body{
+    background-color: var(--background-color);
+}
+header{
+    width: 100%;
+    height: auto;
+    padding: 2rem 8rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    width: 60%;
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul li{
+    list-style:none;
+
+}
+nav ul li a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-weight: 500;
+    border-bottom: transparent;
+    transition: 0.2s ease-in-out;
+}
+nav ul li a:hover{
+    border-bottom:0.2rem solid var(--text-color);
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: var(--text-color);
+}
+.navbutton{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    border:none;
+    color: var(--background-color);
+    background-color:var(--text-color) ;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.navbutton:hover{
+    background-color: var(--background-colorr);
+    color: var(--text-color);
+    border: 0.2rem solid var(--text-color);
+
+}
+#bars{
+    font-size: 2rem;
+    color: var(--text-color);
+    position: absolute;
+    right: 2%;
+    display: none;
+}
+#switch-mode{
+    position: absolute;
+    right: 1%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    cursor: pointer;
+    transition:  all 0.3s ease-in-out;
+    font-size: 1.6rem;
+}
+#switch-mode i:hover{
+    transform: scale(1.1);
+}
+#switch-mode i:last-child{
+    display: none;
+}
+.darkmode #switch-mode i:last-child{
+    display: block;
+}
+.darkmode #switch-mode i:first-child{
+    display: none;
+}
+#sidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+    width: 25rem;
+    height: 100dvh;
+    display: none;
+    flex-direction:column ;
+    align-items: center;
+    background-color: rgba(110, 107, 107, 0.358);
+    backdrop-filter: blur(5px);
+}
+#sidebar>*{
+    margin-bottom: 2rem;
+    list-style: none;
+}
+#xmark{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+#sidebar a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+main{
+    width: 100%;
+    height: 90dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ),url(images/background.avif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.main-content{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-heading{
+    font-size : clamp(5rem, 8vw, 8rem);
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 5px 5px  20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    
+}
+.main-heading-span{
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.services{
+    width: 100%;
+    height: auto;
+    padding: min(10rem , 5%);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--background-color);
+}
+
+
+.services-cards-content{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+
+}
+.card{
+    padding: 3rem;
+    border-radius:0.1rem;
+    border: var(--text-color) solid 0.1rem;
+}
+.card i{
+    color:var(--text-color);
+    font-size: 3rem;
+
+    }
+.card-heading{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+    margin-block: 1rem;
+}
+.card-description{
+    font-size: 1.2rem;
+    width:90%;
+    color:var(--text-color);
+    letter-spacing: 0.1rem;
+    
+}
+
+
+
+.Categories{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: min(10rem , 5%);
+}
+
+.categories-content{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+}
+.category{
+    padding:2rem;
+    height: auto;
+    position: relative;
+}
+.categories-heading{
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: var(--text-color);
+}
+.category a {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out 0.2s;
+
+}
+
+.category a img{
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 9/16;
+    transition: all 0.3s ease-in-out 0.2s;
+    filter: grayscale(100%);
+
+}
+.img-category-name{
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+        transition: all 0.3s ease-in-out 0.2s;
+
+
+}
+.category:hover  img {
+  filter: grayscale(0%);
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.category:hover .img-category-name{
+    opacity: 1;
+}
+
+
+.main-btn{
+    width: 20rem;
+    height: 5rem;
+    border: 0.3rem solid white;
+    color: white;
+    background: transparent;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.main-btn:hover{
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+@media (max-width:600px){
+    #hideonmobile{
+        display: none;
+    }
+    #bars{
+        display: block;
+    }
+    #switch-mode{
+        right: 10%;
+    }
+
+}
+
+@media (max-width:375px)
+{
+    #sidebar{
+        width: 100%;
+    }    
+
+
+}
+
+
+
